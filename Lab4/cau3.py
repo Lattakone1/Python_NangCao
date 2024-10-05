@@ -1,34 +1,22 @@
 import tkinter as tk
+from tkinter import ttk
 
-# Global Variables (module-level)
-global_var1 = "Hello from Global Variable"
-global_var2 = 100
+# Biến toàn cục
+GLOBAL_CONST = 42
+print(GLOBAL_CONST)  # In ra giá trị của biến toàn cục
 
-# Constants (by convention, constants are written in uppercase)
-PI = 3.14159
-GRAVITY = 9.81
-SPEED_OF_LIGHT = 299792458  # in meters per second
+# Tạo ứng dụng GUI
+root = tk.Tk()  # Tạo cửa sổ chính
+root.title("Simple GUI")  # Đặt tiêu đề cho cửa sổ
 
-# Function to access global variables and constants
-def show_globals():
-    # Access global variables and constants within the Tkinter window
-    text_area.insert(tk.INSERT, f"Global Variable 1: {global_var1}\n")
-    text_area.insert(tk.INSERT, f"Global Variable 2: {global_var2}\n")
-    text_area.insert(tk.INSERT, f"PI Constant: {PI}\n")
-    text_area.insert(tk.INSERT, f"Gravity Constant: {GRAVITY}\n")
-    text_area.insert(tk.INSERT, f"Speed of Light Constant: {SPEED_OF_LIGHT}\n")
+# Tạo Entry widget để nhập tên
+name_label = ttk.Label(root, text="Enter your name:")
+name_label.grid(column=0, row=0)
 
-# Tkinter GUI setup
-root = tk.Tk()
-root.title("Global Variables and Constants Example")
+name_entered = ttk.Entry(root, width=12)  # Ô nhập liệu cho tên
+name_entered.grid(column=1, row=0)
+name_entered.focus()  # Focus vào ô nhập liệu
 
-# Create a Text widget to display information
-text_area = tk.Text(root, width=50, height=10)
-text_area.pack()
-
-# Button to trigger the display of global variables and constants
-btn_show = tk.Button(root, text="Show Globals and Constants", command=show_globals)
-btn_show.pack()
-
-# Run the Tkinter event loop
-root.mainloop()
+# Khởi chạy GUI
+win = root
+win.mainloop()

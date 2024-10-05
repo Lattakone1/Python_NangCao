@@ -31,7 +31,7 @@ class ToolTip:
 
 class App:
     """Main application class."""
-    
+
     def __init__(self, root):
         self.root = root
         self.root.title("Python GUI")

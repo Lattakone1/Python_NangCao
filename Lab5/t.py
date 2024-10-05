@@ -113,8 +113,6 @@ class App:
         label_frame.grid(column=0, row=0, padx=20, pady=5)
 
         # Checkbuttons
-
-
         chk_state_disabled = tk.BooleanVar()
         chk_disabled = ttk.Checkbutton(label_frame, text='Disabled', var=chk_state_disabled, state='disabled')
         chk_disabled.grid(column=0, row=0, padx=8, pady=4, sticky='W')
@@ -129,12 +127,22 @@ class App:
 
         # Radiobuttons for color choice
         color = tk.StringVar(value='Gold')
-        blue_radio = ttk.Radiobutton(label_frame, text='Blue', value='Blue', variable=color)
-        gold_radio = ttk.Radiobutton(label_frame, text='Gold', value='Gold', variable=color)
-        red_radio = ttk.Radiobutton(label_frame, text='Red', value='Red', variable=color)
-        blue_radio.grid(column=0, row=1, padx=8, pady=4, sticky='W')
-        gold_radio.grid(column=1, row=1, padx=8, pady=4, sticky='W')
-        red_radio.grid(column=2, row=1, padx=8, pady=4, sticky='W')
+
+        # Create frames for background color
+        blue_frame = tk.Frame(label_frame, bg='lightblue', bd=2)
+        blue_frame.grid(column=0, row=1, padx=8, pady=4, sticky='W')
+        blue_radio = ttk.Radiobutton(blue_frame, text='Blue', value='Blue', variable=color)
+        blue_radio.pack()
+
+        gold_frame = tk.Frame(label_frame, bg='lightyellow', bd=2)
+        gold_frame.grid(column=1, row=1, padx=8, pady=4, sticky='W')
+        gold_radio = ttk.Radiobutton(gold_frame, text='Gold', value='Gold', variable=color)
+        gold_radio.pack()
+
+        red_frame = tk.Frame(label_frame, bg='lightcoral', bd=2)
+        red_frame.grid(column=2, row=1, padx=8, pady=4, sticky='W')
+        red_radio = ttk.Radiobutton(red_frame, text='Red', value='Red', variable=color)
+        red_radio.pack()
 
         ToolTip(blue_radio, "This is a Radiobutton control")
         ToolTip(gold_radio, "This is a Radiobutton control")
