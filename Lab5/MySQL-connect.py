@@ -12,3 +12,4 @@ if conn.is_connected():
     print("Connected to MySQL Database")
 
 conn.close()
+  
