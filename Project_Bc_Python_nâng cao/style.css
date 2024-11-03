@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-btn {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.flash-sale-banner {
+    background-color: #ff9900;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.main-content {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.filter-section {
+    width: 20%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section h2 {
+    margin-bottom: 10px;
+}
+
+.filter-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.products-section {
+    width: 75%;
+    margin-left: 5%;
+}
+
+.products-section h2 {
+    margin-bottom: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.product .price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product .discount {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}

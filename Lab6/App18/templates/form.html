@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu Flask-WTF</title>
+</head>
+<body>
+    <h1>Gửi Tên</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.ten.label }}<br>
+        {{ form.ten(size=32) }}<br>
+        {{ form.nut_gui() }}
+    </form>
+</body>
+</html>

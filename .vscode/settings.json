@@ -1,5 +1,27 @@
 {
     "gotoSymbolStack.currentStackPosition": 0,
     "gotoSymbolStack.maxStackPosition": 0,
-    "gotoSymbolStack.filePositionInfo": []
+    "gotoSymbolStack.filePositionInfo": [],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "example.db",
+            "database": "lattakone",
+            "username": "root"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "example.db",
+            "database": "lattakone1",
+            "username": "root",
+            "password": ""
+        }
+    ]
 }

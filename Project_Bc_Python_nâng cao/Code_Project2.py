@@ -17,7 +17,7 @@ def connect_db(dbname='postgres'):
     except Exception as e:
         print(f"Error while connecting to database {dbname}:", e)
         raise
-
+         
 def create_database():
     try:
         conn = connect_db()

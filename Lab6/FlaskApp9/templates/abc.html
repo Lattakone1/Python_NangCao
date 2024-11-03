@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+</head>
+<body>
+    <h1>List of Programming Languages</h1>
+    <table border="1">
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+        </tr>
+        {% for ketqua in ngon_ngu %}
+        <tr>
+            <td>{{ ketqua.STT }}</td>
+            <td>{{ ketqua.ten }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
